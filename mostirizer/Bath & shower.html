@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .head {
+      font-size: 14px;
+      height: 50px;
+      width: 70%;
+      line-height: 19.6px;
+      font-weight: 300;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .head{
+        
+  white-space:normal;
+  overflow:hidden;
+  text-overflow:inherit;
+
+    }
+    hr {
+      margin-top: 40px;
+    }
+    #top {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1px;
+      margin-top: 50px;
+    }
+    #top select {
+      height: 35px;
+      width: 180px;
+      margin-right: 30px;
+    }
+    /* #top div{
+       height: 35px;
+       width: 180px;
+       margin-right: 30px;
+    } */
+    .search input[type="text"] {
+      float: right;
+      padding: 6px;
+      border: 1 px solid black;
+      width: 180px;
+      margin-right: 50px;
+      margin-left: 40px;
+      font-size: 17px;
+    }
+    #container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    /* div{
+        height: 100px;
+    } */
+    #bord {
+      height: 60px;
+      width: auto;
+      border: 1px solid red;
+    }
+    .btn {
+      border: 0px;
+      background-color: #333333;
+      text-align: center;
+      padding: 5px 105px;
+      color: white;
+      font-size: 130%;
+      height: 42px;
+    }
+    .btn:hover {
+      border: 0px;
+      background-color: #28bdb7;
+    }
+    /* #img:hover{
+        
+    } */
+    h4 {
+      font-size: 14px;
+      line-height: 19.6px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-decoration: none solid;
+    }
+  </style>
+  <body>
+    <h1>Bath and Shower</h1>
+    <div class="head">
+        Indulge in a luxury bathing experience with our bath and shower selection. Create your spa at home with a wide range of scrubs, shower gels, and bath milk, as well as salt, bath foam, and oil. Bath salt, for example, will help create a beautiful atmosphere with a fantastic smell and relax your body after a long day. Westlab Sleep Epsom and Dead Sea Bathing Salts with Lavender, Jasmine, and Valerian would be ideal to use before going to bed, as lavender calms, reduces joint tension, and provides a restful night's sleep.
+
+        Bath foam will not only help you relax, but it can also bring your warm childhood memories back. As soon as the bath foam gets into the water it gets playful, creating lots of bubbles and thinning out the pleasant aroma. L'Occitane Shea Bubble Bath, for example, will transport you to a moment of pure comfort. Treat your body every day because you deserve it!
+        Read more
+
+    </div>
+
+    <hr />
+    <div id="top">
+      <div>
+        <select>
+          <option>Sort By</option>
+          <option>price:low to high</option>
+          <option>price:high to low</option>
+        </select>
+      </div>
+      <!-- <div>
+        <select>
+        Brand
+    </select>
+    </div> -->
+      <div class="search">
+        <input type="text" placeholder="Brand" />
+      </div>
+
+      <div>
+        <select>
+          <option>Bath & Body 
+              Care</option>
+        </select>
+      </div>
+      <div>
+        <select>
+          <option>Bath & Shower</option>
+        </select>
+      </div>
+
+      <div>
+        <select>
+          <option>Bodycare Concern</option>
+        </select>
+      </div>
+      <div>
+        <select>
+          <option>Body Skin Health</option>
+        </select>
+      </div>
+    </div>
+    <hr />
+    <div id="container"></div>
+  </body>
+</html>
+
+<script>
+  var flatiron = [
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11286762-1954822086680064.jpg",
+      name: "No7 Total Renewal Micro-Dermabrasion Exfoliato ",
+      info: "15% off with code S$ 15 -Sunday Riley C.E.O. Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$45.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12564808-1014935531447783.jpg",
+      name: "First Aid Beauty KP Bump Eraser Body Scrub with 10% AHA",
+      info: "EltalMD Gift",
+      price: "$55.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/11289756-7365760149316208.jpg",
+      name: "Soap and Glory The Scrub of Your Life Smoothing Body Scrub 200ml",
+      info: "Save 50 %",
+      price: "$45.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/11709501-3754562854298187.jpg",
+      name: "Bioderma Atoderm normal to very dry skin face and body cleanser 200ML",
+      info: "Juice Beauty Gift",
+      price: "$7.50",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11289744-1594503184029861.jpg",
+      name: "Soap and Glory Smoothie Star Breakfast Scrub",
+      info: " Select your Gift",
+      price: "$8.99",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12747907-1514871998779558.jpg",
+      name: "DERMAdoctor KP Duty Dermatologist Formulated Body Scrub (Various Sizes)",
+      info: "Epionce Purifying Wash 8oz",
+      price: "$8.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12004943-1784871984217738.jpg",
+      name: "Molton Brown Black Peppercorn Body Wash 300ml",
+      info: "Save 30%",
+      price: "$7.75",
+    },
+    { img:"https://static.thcdn.com/images/xsmall/webp//productimg/original/10881872-7594931143816293.jpg",
+      name: "Rituals The Ritual of Ayurveda Body Scrub 300g",
+      info: "Save 50%",
+      price: "$81.38",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/11207458-1094859309051703.jpg",
+      name: "Aesop Geranium Leaf Body Scrub 170ml",
+      info: "Jan Marini Gift",
+      price: "$149.99",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/11536577-8484530983780580.jpg",
+      name: "Murad Acne Body Wash",
+      info: "Juice Beauty Gift",
+      price: "$12.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13175946-1904889913658701.jpg",
+      name: "Rituals The Ritual of Ayurveda Body Scrub ",
+      info: "AHAVA Gift",
+      price: "$8.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11292030-5634830113663628.jpg",
+      name: "Embryolisse Lait Crème Fluid 16.90f. oz ",
+      info: "15% off with code $$15 - Sunday Riley C.E.O.Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$149.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11286045-9874902410736099.jpg",
+      name: "AHAVA Mineral Botanic Velvet Cream Wash-Hibiscus and Fig 500ml ",
+      info: "AHAVA Gift",
+      price: "$176.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11659771-1974866362012160.jpg",
+      name: "REN Clean Skincare AHA Smart Renewal Body Serum 200ml ",
+      info: "25% off Vitamin C",
+      price: "$122.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/13309116-6914896473834562.jpg",
+      name: "Aesop Geranium Leaf Body Cleanser Gel 500ml ",
+      info: "25% off Vitamin C",
+      price: "$19.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12226515-8054768403426340.jpg",
+      name: "ESPA Bergamot and Jasmine Bath and Shower Gel 250ml ",
+      info: "Select your Gift",
+      price: "$16.00",
+    },
+  ];
+  flatiron.map(function (ele) {
+    var box = document.createElement("div");
+    var image = document.createElement("img");
+    image.src = ele.img;
+    image.style.height = "auto";
+    image.style.width = "297px";
+    var h4 = document.createElement("p");
+    h4.textContent = ele.name;
+    var bord = document.createElement("div");
+    bord.setAttribute("id", "bord");
+    var p = document.createElement("p");
+    p.textContent = ele.info;
+    p.style.fontSize = "14.5px";
+    bord.append(p);
+
+    var price = document.createElement("h2");
+    price.textContent = ele.price;
+
+    var quick = document.createElement("button");
+    quick.textContent = "Quick Buy";
+    quick.setAttribute("class", "btn");
+    quick.addEventListener("click",function(){
+        quickBuy(ele)
+    })
+
+    box.append(image, h4, bord, price, quick);
+
+    document.querySelector("#container").append(box);
+  });
+  function quickBuy(ele){
+      console.log(ele)
+  }
+</script>

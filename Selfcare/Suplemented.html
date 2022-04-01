@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .head {
+      font-size: 14px;
+      height: 50px;
+      width: 70%;
+      line-height: 19.6px;
+      font-weight: 300;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .head{
+        
+  white-space:normal;
+  overflow:hidden;
+  text-overflow:inherit;
+
+    }
+    hr {
+      margin-top: 40px;
+    }
+    #top {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1px;
+      margin-top: 50px;
+    }
+    #top select {
+      height: 35px;
+      width: 180px;
+      margin-right: 30px;
+    }
+    /* #top div{
+       height: 35px;
+       width: 180px;
+       margin-right: 30px;
+    } */
+    .search input[type="text"] {
+      float: right;
+      padding: 6px;
+      border: 1 px solid black;
+      width: 180px;
+      margin-right: 50px;
+      margin-left: 40px;
+      font-size: 17px;
+    }
+    #container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    /* div{
+        height: 100px;
+    } */
+    #bord {
+      /* height: 60px; */
+      /* width: auto; */
+      border: 1px solid red;
+      
+    }
+    .btn {
+      border: 0px;
+      background-color: #333333;
+      text-align: center;
+      padding: 5px 105px;
+      color: white;
+      font-size: 130%;
+      height: 42px;
+    }
+    .btn:hover {
+      border: 0px;
+      background-color: #28bdb7;
+    }
+    /* #img:hover{
+        
+    } */
+    h4 {
+      font-size: 14px;
+      line-height: 19.6px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-decoration: none solid;
+    }
+    @media only screen and (min-width: 421px) and (max-width: 780px) {
+        #container{
+          grid-template-columns:repeat (2,1fr);
+          /* grid-template-rows: auto; */
+        
+        }
+        #container>div{
+          display: flex;
+          flex-direction: column;
+        }
+        p{
+          text-align: center;
+        }
+        #bord {
+      /* height: 60px;
+      width: auto; */
+      border: 1px solid red;
+    }
+    .btn {
+      border: 0px;
+      background-color: #333333;
+      text-align: center;
+      padding: 5px 105px;
+      color: white;
+      font-size: 130%;
+      height: 42px;
+    }
+    .btn:hover {
+      border: 0px;
+      background-color: #28bdb7;
+    }
+    h4 {
+      font-size: 14px;
+      line-height: 19.6px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-decoration: none solid;
+    }
+    #top {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1px;
+      margin-top: 50px;
+    }
+    #top select {
+      height: 35px;
+      width: 180px;
+      margin-right: 30px;
+    }
+      }
+      
+      /* small screens */
+      @media only screen and (min-width: 70px) and (max-width: 420px) {
+        #container{
+            grid-template-columns:repeat (1,1fr);
+            /* grid-template-rows: auto; */
+        }
+        #container>div{
+          display: flex;
+          flex-direction: column;
+        }
+        p{
+          text-align: center;
+        }
+      }
+        
+    
+  </style>
+  <body>
+    <h1>Vitamins and Supplements
+    </h1>
+    <div class="head">
+        Today, given the crazy lifestyle, poor environment, and constant stress, it is very difficult to maintain beauty and health without the additional use of vitamins and energy supplements. Vitamins are biologically active substances, the amount of which determines the state of the immune system, the health of bones, hair, and skin. For example, the wonderful B vitamin, also known as biotin, and collagen play a key role in the metabolism of proteins, fats, and carbohydrates, and are very important for maintaining healthy skin, nails and hair. The gummies from Soji Health can be your great choice here. To fuel your body with energy, we recommend you to have a look at the Hush & Hush energy supplement that gives you a wholesome dose of protein, fiber, and long-lasting energy that you really need.
+
+
+
+
+
+    </div>
+
+    <hr />
+    <div id="top">
+      <div>
+        <select>
+          <option>Sort By</option>
+          <option>price:low to high</option>
+          <option>price:high to low</option>
+        </select>
+      </div>
+      <!-- <div>
+        <select>
+        Brand
+    </select>
+    </div> -->
+      <div class="search">
+        <input type="text" placeholder="Brand" />
+      </div>
+
+      <div>
+        <select>
+          <option>
+             Price  
+              </option>
+        </select>
+      </div>
+      <div>
+        <select>
+          <option>Savings</option>
+        </select>
+      </div>
+
+      <div>
+        <select>
+          <option>Average Reviews</option>
+        </select>
+      </div>
+    </div>
+    <hr />
+    <div id="container"></div>
+  </body>
+</html>
+
+<script>
+  var flatiron = [
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12676242-7394796898549204.jpg",
+      name: "Algenist Spirulina (Total) Supplements 7.8 oz",
+      info: "15% off with code SS15 + Sunday Riley C.E.O. Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$35.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/10363104-1354891240020879.jpg",
+      name: "Elemis Cellular Recovery Skin Bliss Capsules (60 Capsules)",
+      info: "$32 Elemis Gift",
+      price: "$105.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12323496-1994720655404332.jpg",
+      name: "Goli Nutrition Apple Cider Vinegar Gummies",
+      info: "Select your Gift",
+      price: "$19.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12855602-2124850243945880.jpg",
+      name: "Gallinée Skin and Microbiome Food Supplement: A Month of Pre, Pro and Postbiotics (30 Caps) 15g",
+      info: "Gallinée Gift",
+      price: "$30.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/10375443-1644897239869649.jpg",
+      name: "Perricone MD Omega-3 (90 day) 270 softgels (Worth $126)",
+      info: " 15% off with code SS15 + Sunday Riley C.E.O. Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$43.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/12060160-1124659506750022.jpg",
+      name: "The Perfect V - VV Cream Gentle Wash 100ml",
+      info: "15% off with code SS15 + Sunday Riley C.E.O. Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$21.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/13411951-4224940980375161.jpg",
+      name: "Smile Makers - The Artist",
+      info: "15% off with code SS15 + Sunday Riley C.E.O. Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$129.00",
+    },
+    { img:"https://static.thcdn.com/images/xsmall/webp//productimg/original/12669846-2054834727803833.jpg",
+      name: "LELO Personal Moisturiser 75ml",
+      info: "$20 Lelo Candle Gift",
+      price: "$14.90",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/11207458-1094859309051703.jpg",
+      name: "Aesop Geranium Leaf Body Scrub 170ml",
+      info: "Jan Marini Gift",
+      price: "$149.99",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12669847-9544896987090924.jpg",
+      name: "Smile Makers - The Firefighter",
+      info: "15% off with code SS15 + Sunday Riley C.E.O. Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$60.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12669847-9544896987090924.jpg",
+      name: "LELO Premium Cleaning Spray 60ml ",
+      info: "$20 Lelo Candle Gift",
+      price: "$9.90",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11292030-5634830113663628.jpg",
+      name: "Embryolisse Lait Crème Fluid 16.90f. oz ",
+      info: "15% off with code $$15 - Sunday Riley C.E.O.Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$149.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11286045-9874902410736099.jpg",
+      name: "AHAVA Mineral Botanic Velvet Cream Wash-Hibiscus and Fig 500ml ",
+      info: "AHAVA Gift",
+      price: "$176.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/12278455-1264704331964319.jpg",
+      name: "Smile Makers - Generous Gel ",
+      info: "15% off with code SS15 + Sunday Riley C.E.O. Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$25.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12669843-1824930113582216.jpg",
+      name: "LELO Ora 3 - Deep Rose",
+      info: "$20 Lelo Candle Gift",
+      price: "$169.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12226515-8054768403426340.jpg",
+      name: "ESPA Bergamot and Jasmine Bath and Shower Gel 250ml ",
+      info: "Select your Gift",
+      price: "$16.00",
+    },
+  ];
+  flatiron.map(function (ele) {
+    var box = document.createElement("div");
+    var image = document.createElement("img");
+    image.src = ele.img;
+    image.style.height = "auto";
+    image.style.width = "297px";
+    var h4 = document.createElement("p");
+    h4.textContent = ele.name;
+    var bord = document.createElement("div");
+    bord.setAttribute("id", "bord");
+    var p = document.createElement("p");
+    p.textContent = ele.info;
+    p.style.fontSize = "14.5px";
+    bord.append(p);
+
+    var price = document.createElement("h2");
+    price.textContent = ele.price;
+
+    var quick = document.createElement("button");
+    quick.textContent = "Quick Buy";
+    quick.setAttribute("class", "btn");
+    quick.addEventListener("click",function(){
+        quickBuy(ele)
+    })
+
+    box.append(image, h4, bord, price, quick);
+
+    document.querySelector("#container").append(box);
+  });
+  function quickBuy(ele){
+      console.log(ele)
+  }
+</script>
