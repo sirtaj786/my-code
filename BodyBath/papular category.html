@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .head {
+      font-size: 14px;
+      height: 50px;
+      width: 70%;
+      line-height: 19.6px;
+      font-weight: 300;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .head{
+        
+  white-space:normal;
+  overflow:hidden;
+  text-overflow:inherit;
+
+    }
+    hr {
+      margin-top: 40px;
+    }
+    #top {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1px;
+      margin-top: 50px;
+    }
+    #top select {
+      height: 35px;
+      width: 180px;
+      margin-right: 30px;
+    }
+    /* #top div{
+       height: 35px;
+       width: 180px;
+       margin-right: 30px;
+    } */
+    .search input[type="text"] {
+      float: right;
+      padding: 6px;
+      border: 1 px solid black;
+      width: 180px;
+      margin-right: 50px;
+      margin-left: 40px;
+      font-size: 17px;
+    }
+    #container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    /* div{
+        height: 100px;
+    } */
+    #bord {
+      height: 60px;
+      width: auto;
+      border: 1px solid red;
+    }
+    .btn {
+      border: 0px;
+      background-color: #333333;
+      text-align: center;
+      padding: 5px 105px;
+      color: white;
+      font-size: 130%;
+      height: 42px;
+    }
+    .btn:hover {
+      border: 0px;
+      background-color: #28bdb7;
+    }
+    /* #img:hover{
+        
+    } */
+    h4 {
+      font-size: 14px;
+      line-height: 19.6px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-decoration: none solid;
+    }
+  </style>
+  <body>
+    <h1>All Bath & Body</h1>
+    <div class="head">
+        It is important to take care of your body and keep
+         your skin healthy, moistured and strong. Give your body 
+         the love it deserves with our incredible range of bath and body 
+         products. Our selection of skin care brands will give your skin much
+          needed moisture that your body usually lacks, especially during winter.
+           We recommend a daily regime, which includes exfoliation, toning and moisturizing. You can search by particular ingredient and concern!
+
+
+
+    </div>
+
+    <hr />
+    <div id="top">
+      <div>
+        <select>
+          <option>Sort By</option>
+          <option>price:low to high</option>
+          <option>price:high to low</option>
+        </select>
+      </div>
+      <!-- <div>
+        <select>
+        Brand
+    </select>
+    </div> -->
+      <div class="search">
+        <input type="text" placeholder="Brand" />
+      </div>
+
+      <div>
+        <select>
+          <option>Bath & Body 
+              Care</option>
+        </select>
+      </div>
+      <div>
+        <select>
+          <option>Bodycare Concern</option>
+        </select>
+      </div>
+
+      <div>
+        <select>
+          <option>Body Skin Health</option>
+        </select>
+      </div>
+      <div>
+        <select>
+          <option>Bath & Shower</option>
+        </select>
+      </div>
+    </div>
+    <hr />
+    <div id="container"></div>
+  </body>
+</html>
+
+<script>
+  var flatiron = [
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12879726-8974933229539731.jpg",
+      name: "Natura Bissé Diamond Well-Living The Body Cream 200ml ",
+      info: "Natura Bissé SkinStore Gift",
+      price: "$45.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/11659771-1974866362012160.jpg",
+      name: "REN Clean Skincare AHA Smart Renewal Body Serum 200ml",
+      info: "25% off Vitamin C",
+      price: "$55.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/10636833-1374896383094882.jpg",
+      name: "Aesop Reverence Aromatique Hand Wash 500ml",
+      info: "Select your Gift",
+      price: "$45.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12078044-2714853874948150.jpg",
+      name: "Mama Mio Megamama Body Lotion 180ml $5rtifh",
+      info: "Mama Mio $35 Gift",
+      price: "$7.50",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11287222-1874871998236897.jpg",
+      name: "DERMAdoctor Total Nonscents Ultra Gentle Brightening Antiperspirant",
+      info: " DERMAdoctor Gift",
+      price: "$8.99",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11639761-2284904475589008.jpg",
+      name: "NuFACE NuBODY Skin Toning Device 50mg dk",
+      info: "SHOP ALL NUFACE",
+      price: "$8.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11287315-6934866308876988.jpg",
+      name: "Dr Dennis Gross Alpha Beta Glow Pad for Body 200mg 50ml",
+      info: "Dr Dennis Gross Gift",
+      price: "$7.75",
+    },
+    { img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13207946-9934900760832036.jpg",
+      name: "Aesop The Advocate Elaborate Body Kit (Worth $118.00)",
+      info: "15% off with code SS15 + Sunday Riley C.E.O. Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$81.38",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp/productimg/1600/1600/12281535-1204710396726471.jpg",
+      name: "Daily Detox Brush 5.9g 100ml 50gm 4000 odhfk",
+      info: "Daily Concepts Gift",
+      price: "$149.99",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12226515-8054768403426340.jpg",
+      name: "ESPA Bergamot and Jasmine Bath and Shower Gel 250ml",
+      info: "Select your Gift",
+      price: "$12.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12747907-1514871998779558.jpg",
+      name: "DERMAdoctor KP Duty Dermatologist Formulated Body Scrub (Various Sizes)",
+      info: "DERMAdoctor Gift",
+      price: "$8.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12708795-9534933227754011.jpg",
+      name: "Natura Bissé Diamond Well-Living Energizing Dry Body Oil 100ml ",
+      info: "Natura Bissé SkinStore Gift",
+      price: "$149.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13192137-4384885744228446.jpg",
+      name: "BAWDY Clay Butt Mask 30g  gh  jhhg hfhj njggh ",
+      info: "$40 Bawdy Gift",
+      price: "$176.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12878246-2074868109651318.jpg",
+      name: "Fur Ingrown Concentrate 0.5 fl. oz fgvf vgh fsx",
+      info: "15% off with code SS15 + Sunday Riley C.E.O. Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$122.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/10881872-7594931143816293.jpg",
+      name: "Molton Brown Black Peppercorn Body Wash 300ml ",
+      info: "Molton Brown Gift",
+      price: "$19.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12564808-1014935531447783.jpg",
+      name: "First Aid Beauty KP Bump Eraser Body Scrub with 10% AHA ",
+      info: "15% off with code SS15 + Sunday Riley C.E.O. Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$16.00",
+    },
+  ];
+  flatiron.map(function (ele) {
+    var box = document.createElement("div");
+    var image = document.createElement("img");
+    image.src = ele.img;
+    image.style.height = "auto";
+    image.style.width = "297px";
+    var h4 = document.createElement("p");
+    h4.textContent = ele.name;
+    var bord = document.createElement("div");
+    bord.setAttribute("id", "bord");
+    var p = document.createElement("p");
+    p.textContent = ele.info;
+    p.style.fontSize = "14.5px";
+    bord.append(p);
+
+    var price = document.createElement("h2");
+    price.textContent = ele.price;
+
+    var quick = document.createElement("button");
+    quick.textContent = "Quick Buy";
+    quick.setAttribute("class", "btn");
+    quick.addEventListener("click",function(){
+        quickBuy(ele)
+    })
+
+    box.append(image, h4, bord, price, quick);
+
+    document.querySelector("#container").append(box);
+  });
+  function quickBuy(ele){
+    console.log(ele)
+  }
+</script>

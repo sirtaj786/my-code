@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .head {
+      font-size: 14px;
+      height: 50px;
+      width: 70%;
+      line-height: 19.6px;
+      font-weight: 300;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .head{
+        
+  white-space:normal;
+  overflow:hidden;
+  text-overflow:inherit;
+
+    }
+    hr {
+      margin-top: 40px;
+    }
+    #top {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1px;
+      margin-top: 50px;
+    }
+    #top select {
+      height: 35px;
+      width: 180px;
+      margin-right: 30px;
+    }
+    /* #top div{
+       height: 35px;
+       width: 180px;
+       margin-right: 30px;
+    } */
+    .search input[type="text"] {
+      float: right;
+      padding: 6px;
+      border: 1 px solid black;
+      width: 180px;
+      margin-right: 50px;
+      margin-left: 40px;
+      font-size: 17px;
+    }
+    #container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    /* div{
+        height: 100px;
+    } */
+    #bord {
+      height: 60px;
+      width: auto;
+      border: 1px solid red;
+    }
+    .btn {
+      border: 0px;
+      background-color: #333333;
+      text-align: center;
+      padding: 5px 105px;
+      color: white;
+      font-size: 130%;
+      height: 42px;
+    }
+    .btn:hover {
+      border: 0px;
+      background-color: #28bdb7;
+    }
+    /* #img:hover{
+        
+    } */
+    h4 {
+      font-size: 14px;
+      line-height: 19.6px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-decoration: none solid;
+    }
+  </style>
+  <body>
+    <h1>Self Tanners</h1>
+    <div class="head">
+        Discover a beautiful, buildable tan at home with our selection of self-tanners. Whatever your preferred texture, foam, mist, mousse, moisturizer, gel, lotion, or serum, we have something to suit every skin type and tone. Our self-tanners can give your skin a shiny bronze glow in just a couple of hours. Don't miss Vita Liberata's revered Body Blur Instant HD Skin Finish - a must-have for a Victoria's Secret Angel kind of glow (and if you're feeling daunted, find out more about application). Try St. Tropez self-tanner for a glamorous, French Riviera-inspired, lit-from-within glow, and don't forget B.Tan for a beautiful ultra long-lasting tan.
+
+Read more
+
+    </div>
+
+    <hr />
+    <div id="top">
+      <div>
+        <select>
+          <option>Sort By</option>
+          <option>price:low to high</option>
+          <option>price:high to low</option>
+        </select>
+      </div>
+      <!-- <div>
+        <select>
+        Brand
+    </select>
+    </div> -->
+      <div class="search">
+        <input type="text" placeholder="Brand" />
+      </div>
+
+      <div>
+        <select>
+          <option>Bath & Body 
+              Care</option>
+        </select>
+      </div>
+      <div>
+        <select>
+          <option>Bodycare Concern</option>
+        </select>
+      </div>
+
+      <div>
+        <select>
+          <option>Sunless Tanning</option>
+        </select>
+      </div>
+      <div>
+        <select>
+          <option>Tanning Tool</option>
+        </select>
+      </div>
+    </div>
+    <hr />
+    <div id="container"></div>
+  </body>
+</html>
+
+<script>
+  var flatiron = [
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/11255664-5894870991896287.jpg",
+      name: " The Chemistry Brand Retin-Oil Body Oil 100ml ",
+      info: "15% off with code S$ 15 -Sunday Riley C.E.O. Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$45.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/11232339-1944870991604876.jpg",
+      name: "Epionce Ultra Shield Lotion SPF 50 2.5 oz",
+      info: "EltalMD Gift",
+      price: "$55.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12867250-1754842989290746.jpg",
+      name: "SkinCeuticals Hydra Balm",
+      info: "Save 50 %",
+      price: "$45.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12642733-2004916662633488.jpg",
+      name: "AHAVA Mineral Body Lotion - Triple Size (Worth $87.00)",
+      info: "Juice Beauty Gift",
+      price: "$7.50",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12642736-1624916662703457.jpg",
+      name: "Peter Thomas Roth FirmX Peeling Gel 100ml",
+      info: " Select your Gift",
+      price: "$8.99",
+    },
+    {
+      img: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11401781-1594909431957225.jpg",
+      name: "NUXE Huile Prodigieuse Multi-Purpose Dry Oil 5Oml",
+      info: "15% off with code SS15-Sunday Riley C.E.O.Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$8.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12328667-1074865557248822.jpg",
+      name: "South Beach Skin Solutions Gel for Sensitive Areas",
+      info: "Save 30%",
+      price: "$7.75",
+    },
+    { img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12621916-2104785970718460.jpg",
+      name: "TONYMOLY Aloe Soothing Gel 2.5 oz",
+      info: "Save 50%",
+      price: "$81.38",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/11290634-1574870992714261.jpg",
+      name: "Jan Marini Luminate Face Lotion",
+      info: "Jan Marini Gift",
+      price: "$149.99",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12607212-1084784265954258.png",
+      name: "Juice Beauty Green Apple Firming Body Moisturizer",
+      info: "Juice Beauty Gift",
+      price: "$12.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/11294886-9444871220554559.jpg",
+      name: "AHAVA Caressing Body Sorbet 350ml",
+      info: "AHAVA Gift",
+      price: "$8.00",
+    },
+    {
+      img: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12194050-9444871869280490.jpg",
+      name: "Embryolisse Lait Crème Fluid 16.90f. oz (Worth $80)",
+      info: "15% off with code $$15 - Sunday Riley C.E.O.Vitamin C Rich Hydration Cream (worth $22)",
+      price: "$149.00",
+    },
+  ];
+  flatiron.map(function (ele) {
+    var box = document.createElement("div");
+    var image = document.createElement("img");
+    image.src = ele.img;
+    image.style.height = "auto";
+    image.style.width = "297px";
+    var h4 = document.createElement("p");
+    h4.textContent = ele.name;
+    var bord = document.createElement("div");
+    bord.setAttribute("id", "bord");
+    var p = document.createElement("p");
+    p.textContent = ele.info;
+    p.style.fontSize = "14.5px";
+    bord.append(p);
+
+    var price = document.createElement("h2");
+    price.textContent = ele.price;
+
+    var quick = document.createElement("button");
+    quick.textContent = "Quick Buy";
+    quick.setAttribute("class", "btn");
+    quick.addEventListener("click",function(){
+        quickBuy(ele)
+    })
+
+    box.append(image, h4, bord, price, quick);
+
+    document.querySelector("#container").append(box);
+  });
+  function quickBuy(ele){
+      console.log(ele)
+  }
+</script>
